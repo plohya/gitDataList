@@ -1,0 +1,52 @@
+h1 {
+  color: indianred;
+}
+
+.repo {
+  border: solid 2px black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-name {
+    font-size: 1.2em;
+    font-weight: 500;
+  }
+
+}
+
+.search {
+  display: flex;
+  margin: 10px 0;
+
+  &-input {
+    padding: 5px;
+    width: 100%;
+  }
+
+  &-btn {
+    padding: 5px;
+  }
+}
+
+.loader {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  border: 7px solid indianred;
+  border-bottom: 7px solid brown;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
